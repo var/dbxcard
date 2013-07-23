@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+		<div><p>Hello {{ name }}!</p><p>You might have already authenticated, do you just want to add my details again to your Dropbox?</p>
+				<div class="button-group">
+				    <a href="/add-files" class="button big primary">Yes</a>
+				    <a href="/" class="button big danger">No</a>
+				</div></div><br /><br />
+		<div><p>Not {{ name }}? <a href="/go/dbx" class="button">Click here</a></p></div>
+{% endblock %}
